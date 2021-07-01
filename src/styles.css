@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;1,100&family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
+:root{
+    --primary-color: #000000;
+    --bg-color: #ffffff;
+    --font: 'Bitter', serif;
+    --font2: 'Yomogi', cursive;
+    --header-shadow: #ccc;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--font2);
+}
+
+[data-theme="dark"]{
+    --primary-color: #ffffff;
+    --bg-color: rgb(29 32 37);
+    --header-shadow: rgb(29 32 37);
+}
+
+

@@ -1,0 +1,29 @@
+
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    margin-top: 26px;
+}
+
+.navigation__button{
+    width: 50px;
+    height: 30px;
+    border: 2px solid var(--primary-color);
+    background-color: var(--bg-color);
+    color: var(--primary-color)
+}
+
+.navigation__number{
+    margin: 0 4px;
+    display: flex;
+    align-items: center;
+    color: var(--primary-color)
+}
+
+.navigation__button-scrollBy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+}

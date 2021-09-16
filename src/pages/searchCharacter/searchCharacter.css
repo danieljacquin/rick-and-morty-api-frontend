@@ -1,0 +1,42 @@
+
+
+.search__character{
+    flex-grow: 1;
+    background: var(--bg-color-pages);
+}
+
+.title{
+    text-align: center;
+    color: gray;
+    font-size: 32px;
+    margin-bottom: 20px
+}
+
+.form__search{
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 30px;
+}
+
+.form__search-input{
+    width: 100%;
+    outline: none;
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    color: gray;
+}
+
+
+.characters__container{
+    margin: 20px 0;
+}
+
+.error__message{
+    text-align: center;
+    font-size: 40px;
+    color: var(--primary-color);
+    margin-top: 40px;
+}
+

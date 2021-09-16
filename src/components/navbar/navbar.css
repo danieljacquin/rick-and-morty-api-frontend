@@ -1,10 +1,13 @@
 
 
 .header{
-    width: 100%
+    width: 100%;
+    color: var(--primary-color);
+    background-color: var(--bg-color);
 }
 
 .header__wrapper{
+    width: 100%;
     padding: 0 30px;
     margin:  0 auto;
     display: flex;
@@ -16,8 +19,7 @@
     background-color: var(--bg-color);
     position: fixed;
     top: 0;
-    right: 0;
-    left: 0;
+    z-index: 1;
 }
 
 .header__log{
@@ -44,10 +46,22 @@
     padding: 4px;
     display: flex;
     align-items: center;
-    border: 1px solid #ccc;
-    background-color: #ccc;
+    border: 1px solid gray;
+    background-color: gray;
     border-radius: 3px;
     cursor: pointer;
+}
+
+.header__hamburguer-icon{
+    border: 1px solid gray;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 10px;
+    display: none;
 }
 
 .header__list{
@@ -55,13 +69,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 340px;
+    width: 315px;
     color: var(--primary-color);
 }
 
-.header__list-item{
+.header__list-link{
     font-size: 19px;
     cursor: pointer;
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
 .header__list-item:last-child{
@@ -71,6 +87,55 @@
 
 .header__title{
     font-size: 70px;
-    margin-top: 60px;
+    padding-top: 90px;
+    padding-bottom: 70px;
     text-align: center;
+}
+
+/*Media queries for smaller devices */
+
+@media (max-width: 700px){
+
+    .header__wrapper{
+        padding: 0 15px;
+    }
+
+    .header__list{
+        width: 100%;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        flex-direction: column; 
+        justify-content: center;
+        background-color: var(--bg-color);
+        transform: translateX(110%);
+        transition: .4s ease;
+    }
+
+    .header__list--active{
+        transform: translateX(0);
+    }
+
+    .header__list-item{
+        margin: 5px 0;
+    }
+
+    .header__nav{
+        justify-content: space-between;
+    }
+
+    .header__darkMode-icon{
+        margin-right: 0;
+    }
+    
+    .header__hamburguer-icon{
+        display: flex;
+        z-index: 100;
+    }
+
+    .header__title{
+        font-size: 50px;
+    }
 }

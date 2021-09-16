@@ -1,23 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;1,100&family=Dela+Gothic+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yomogi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 :root{
     --primary-color: #000000;
     --bg-color: #ffffff;
     --font: 'Bitter', serif;
-    --font2: 'Yomogi', cursive;
+    --font2: 'Raleway', sans-serif;
     --header-shadow: #ccc;
+    --bg-color-pages: #f6f6fe;
+    --card-shadow: #ccc;
+    scroll-behavior: smooth;
 }
 
 *{
     padding: 0;
     margin: 0;
     font-family: var(--font2);
+    box-sizing: border-box;
+    transition: .1s ease;
+}
+
+.rickandmortyapi{
+    width:100%;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
 }
 
 [data-theme="dark"]{
     --primary-color: #ffffff;
     --bg-color: rgb(29 32 37);
-    --header-shadow: rgb(29 32 37);
+    --header-shadow: #000000;
+    --bg-color-pages: #24282f;
+    --card-shadow: rgba(2, 2, 2, 0.5);
+    transition: .1s;
 }
 
 

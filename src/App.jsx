@@ -1,5 +1,5 @@
 import React, { useLayoutEffect, useReducer } from 'react'
-import Navbar from './components/navbar/Navbar'
+import DashboardRoute from './routers/DashboardRoute'
 import { ContextDarkMode } from './contexts/contextDarkMode/ContextDarkMode'
 import { reducerDarkMode } from './contexts/contextDarkMode/reducerDarkMode'
 
@@ -13,7 +13,6 @@ const App = () => {
     const [darkMode, dispatch] = useReducer(reducerDarkMode, {}, init)
 
     useLayoutEffect(() => {
-        console.log('entre')
         localStorage.setItem('dark', JSON.stringify(darkMode));
         if(darkMode.dark){
             document.documentElement.setAttribute('data-theme', 'dark');
@@ -24,9 +23,9 @@ const App = () => {
     },[darkMode])
 
     return (
-        <div>
+        <div className="rickandmortyapi">
             <ContextDarkMode.Provider value={{darkMode, dispatch}}>
-                <Navbar/>
+                <DashboardRoute/>
             </ContextDarkMode.Provider>
         </div>
     )

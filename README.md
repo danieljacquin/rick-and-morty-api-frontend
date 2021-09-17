@@ -1,8 +1,9 @@
 
 ## Table of contents
 - [Overview](#overview)
-  - [Execute project](#Execute project)
+  - [Execute Project](#Execute-Project)
   - [Links](#links)
+  - [Images](#images)
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
@@ -25,6 +26,8 @@ You will also see any lint errors in the console.
 ## Link
 
 - Solution URL: [http://rick-and-morty-api-frontend.vercel.app/]
+
+## Images
 
 lightMode
 ![](./src/assets/images/Screenshot_rick1.png)

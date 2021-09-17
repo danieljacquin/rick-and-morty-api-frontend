@@ -48,4 +48,4 @@ darkMode
 
 
 ## Author
-[@danieljacquin]
+[danieljacquin]
